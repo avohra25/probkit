@@ -12,5 +12,8 @@ authors = [{ name = "Aryan Vohra" }]
 requires-python = ">=3.10"
 dependencies = []
 
+[project.scripts]
+probkit = "probkit.cli:main"
+
 [tool.setuptools]
 packages = ["probkit"]
