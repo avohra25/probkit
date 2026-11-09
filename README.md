@@ -10,6 +10,11 @@ Work in progress. So far:
 - **CountingBloomFilter** with 8-bit saturating counters, so keys can be removed.
 - **CuckooFilter** using partial-key cuckoo hashing, with deletion, a victim
   slot so a full table never drops keys, and a binary format.
+- **HyperLogLog** distinct counting with linear-counting fallback, merge,
+  intersection and Jaccard estimates.
+- **CountMinSketch** frequency estimation with optional conservative update,
+  merge and inner-product (join size) estimates.
+- **SpaceSaving** top-k / heavy hitters with per-item error bounds and merging.
 
 ```python
 from probkit import BloomFilter
