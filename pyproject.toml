@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "probkit"
+version = "0.1.0"
+description = "Probabilistic data structures in pure Python: Bloom, cuckoo, HyperLogLog, Count-Min, top-k"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Aryan Vohra" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["probkit"]
