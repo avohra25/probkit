@@ -8,6 +8,8 @@ Work in progress. So far:
 - **BloomFilter** with optimal sizing, double hashing, union/intersection,
   cardinality estimation and a compact binary format.
 - **CountingBloomFilter** with 8-bit saturating counters, so keys can be removed.
+- **CuckooFilter** using partial-key cuckoo hashing, with deletion, a victim
+  slot so a full table never drops keys, and a binary format.
 
 ```python
 from probkit import BloomFilter
